@@ -9,4 +9,5 @@ CREATE TABLE books (
     author TEXT,
     category TEXT, 
     author_id INT,
-    pages INT);
+    pages INT,
+    FOREIGN KEY (author_id) REFERENCES authors(author_id) );
